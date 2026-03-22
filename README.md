@@ -2,6 +2,11 @@
 
 `yaw_bot` is an Isaac Lab project for training, evaluating, and debugging a two-wheel balancing robot with leg joints.
 
+The name `Yaw Bot` carries two meanings:
+
+- `YAW` refers to yaw-angle stability and heading control
+- `YAW` also stands for `You Always Walk`
+
 The project currently focuses on:
 
 - balancing and standing
