@@ -1,0 +1,1 @@
+from .yaw_bot_cfg import YAW_BOT_CFG

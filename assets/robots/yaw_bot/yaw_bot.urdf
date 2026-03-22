@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="yaw_bot">
+
+    <link name="L_leg2">
+        <inertial>
+            <origin xyz="0.006905062628628249 -0.009854468753303702 -0.055887393037688006" rpy="0 0 0" />
+            <mass value="0.024771540135466605" />
+            <inertia ixx="3.6559708017023435e-05" iyy="3.4227597074614803e-05" izz="2.756736408119141e-06"
+                     ixy="-1.446695481007213e-07" iyz="-5.72849348071433e-06" ixz="-8.204580116337257e-07" />
+        </inertial>
+        <visual name="L_leg2_visual">
+            <origin xyz="0.004599996208398833 -4.294191229270439e-09 -4.309250902778672e-09"
+                    rpy="-1.5707963267948966 1.3962634015954634 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="meshes/L_leg2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="L_leg2_collision">
+            <origin xyz="0.004599996208398833 -4.294191229270439e-09 -4.309250902778672e-09"
+                    rpy="-1.5707963267948966 1.3962634015954634 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="meshes/L_leg2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="Body">
+        <inertial>
+            <origin xyz="-1.5122274954099258e-05 -0.008522917911864053 -0.0033113715021494726" rpy="0 0 0" />
+            <mass value="0.55" />
+            <inertia ixx="0.000707039674353944" iyy="0.0015058415792489023" izz="0.0018990194155595217"
+                     ixy="-4.003016326460196e-08" iyz="-3.688655883629387e-05" ixz="4.7553160463655175e-08" />
+        </inertial>
+        <visual name="Body_visual">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="meshes/Body.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Body_collision">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="meshes/Body.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="R_wheel">
+        <inertial>
+            <origin xyz="-0.029143190769008082 1.336656227368671e-09 2.4209189852797408e-09" rpy="0 0 0" />
+            <mass value="0.09579883926422769" />
+            <inertia ixx="4.4821067523390657e-05" iyy="3.332778072440257e-05" izz="3.332778072440204e-05"
+                     ixy="-5.652164680205037e-13" iyz="-3.841999940752855e-20" ixz="-1.464693526319681e-12" />
+        </inertial>
+        <visual name="R_wheel_visual">
+            <origin xyz="-0.04560010777365896 2.2525172260756677e-09 4.794267649543826e-09"
+                    rpy="-3.1415925105579046 0.17453292519943325 1.570796297275515" />
+            <geometry>
+                <mesh filename="meshes/R_wheel.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="R_wheel_collision">
+            <origin xyz="-0.029143190769008082 0 0"
+                    rpy="0 1.5707963267948966 0" />
+            <geometry>
+                <cylinder radius="0.0325" length="0.028" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="L_leg1">
+        <inertial>
+            <origin xyz="-0.01817664032785978 4.2499057784084475e-09 0.0035950394435368825" rpy="0 0 0" />
+            <mass value="0.019929620600305648" />
+            <inertia ixx="1.2938063663276781e-06" iyy="1.0239082030478714e-05" izz="1.1274459117837446e-05"
+                     ixy="-2.1331638291929656e-12" iyz="2.4812564100700546e-14" ixz="2.1438378095246175e-07" />
+        </inertial>
+        <visual name="L_leg1_visual">
+            <origin xyz="3.668816609403436e-09 4.485799178777228e-09 0.007510006387212767"
+                    rpy="-3.141592653589793 0 3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/L_leg1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="L_leg1_collision">
+            <origin xyz="3.668816609403436e-09 4.485799178777228e-09 0.007510006387212767"
+                    rpy="-3.141592653589793 0 3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/L_leg1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="R_leg2">
+        <inertial>
+            <origin xyz="-0.006905071179043256 -0.00985444686487682 -0.05588739624681786" rpy="0 0 0" />
+            <mass value="0.024771540135466612" />
+            <inertia ixx="3.6559708016949207e-05" iyy="3.4228410339707002e-05" izz="2.7559231429525398e-06"
+                     ixy="1.4466825992845216e-07" iyz="-5.726259053072789e-06" ixz="8.204582387729414e-07" />
+        </inertial>
+        <visual name="R_leg2_visual">
+            <origin xyz="-0.004600004758813849 -1.6959085025192167e-09 -4.1170097642151406e-09"
+                    rpy="1.5707963267948966 1.3962634015954634 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="meshes/R_leg2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="R_leg2_collision">
+            <origin xyz="-0.004600004758813849 -1.6959085025192167e-09 -4.1170097642151406e-09"
+                    rpy="1.5707963267948966 1.3962634015954634 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="meshes/R_leg2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="L_wheel">
+        <inertial>
+            <origin xyz="0.029143182218593147 4.913896326508293e-09 -6.210250802496375e-09" rpy="0 0 0" />
+            <mass value="0.09579883926422769" />
+            <inertia ixx="4.482106752339109e-05" iyy="3.332778072440217e-05" izz="3.3327780724402155e-05"
+                     ixy="3.0175019509673178e-14" iyz="-1.0885666498799575e-19" ixz="-1.5696774553673985e-12" />
+        </inertial>
+        <visual name="L_wheel_visual">
+            <origin xyz="0.04560009922324402 4.962791087526064e-09 -8.753711924214258e-09"
+                    rpy="1.5328386244992607e-07 0.17453292519943325 1.5707963563142782" />
+            <geometry>
+                <mesh filename="meshes/L_wheel.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="L_wheel_collision">
+            <origin xyz="0.029143182218593147 0 0"
+                    rpy="0 1.5707963267948966 0" />
+            <geometry>
+                <cylinder radius="0.0325" length="0.028" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="R_leg1">
+        <inertial>
+            <origin xyz="-0.01817664032809215 1.6292111704174773e-09 -0.003595037993951902" rpy="0 0 0" />
+            <mass value="0.019929620600305592" />
+            <inertia ixx="1.293806369083282e-06" iyy="1.0239082027772397e-05" izz="1.1274459117886696e-05"
+                     ixy="2.1254915233987796e-12" iyz="2.4812291959038077e-14" ixz="-2.1438378094416943e-07" />
+        </inertial>
+        <visual name="R_leg1_visual">
+            <origin xyz="3.66881660718299e-09 1.3933100539986755e-09 -0.007510004937627786"
+                    rpy="0 0 3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/R_leg1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="R_leg1_collision">
+            <origin xyz="3.66881660718299e-09 1.3933100539986755e-09 -0.007510004937627786"
+                    rpy="0 0 3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/R_leg1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="Body_r_1" type="revolute">
+        <origin xyz="0.03999 0.01997885 0.0063153" rpy="-3.141592653589793 -1.5707963267948966 0" />
+        <parent link="Body" />
+        <child link="L_leg1" />
+        <axis xyz="0 0 1" />
+        <limit lower="-0.174533" upper="1.396263" effort="100" velocity="20" />
+    </joint>
+
+    <joint name="L_leg1_r_4" type="revolute">
+        <origin xyz="-0.06 0 0.00361001" rpy="-3.141592653589793 -1.5707963267948966 0" />
+        <parent link="L_leg1" />
+        <child link="L_leg2" />
+        <axis xyz="-1 0 0" />
+        <limit lower="0.174533" upper="1.48353" effort="100" velocity="20" />
+    </joint>
+
+    <joint name="L_leg2_r_7" type="continuous">
+        <origin xyz="0.0037 -0.01736482 -0.09848079" rpy="3.141592653589793 0 0" />
+        <parent link="L_leg2" />
+        <child link="L_wheel" />
+        <axis xyz="-1 0 0" />
+        <limit effort="100" velocity="50" />
+    </joint>
+
+    <joint name="Body_r_8" type="revolute">
+        <origin xyz="-0.04001 0.01997885 0.0063153" rpy="-3.141592653589793 -1.5707963267948966 0" />
+        <parent link="Body" />
+        <child link="R_leg1" />
+        <axis xyz="0 0 1" />
+        <limit lower="-0.174533" upper="1.396263" effort="100" velocity="20" />
+    </joint>
+
+    <joint name="R_leg1_r_9" type="revolute">
+        <origin xyz="-0.06 0 -0.00361" rpy="-3.141592653589793 -1.5707963267948966 0" />
+        <parent link="R_leg1" />
+        <child link="R_leg2" />
+        <axis xyz="1 0 0" />
+        <limit lower="-1.48353" upper="-0.174533" effort="100" velocity="20" />
+    </joint>
+
+    <joint name="R_leg2_r_10" type="continuous">
+        <origin xyz="-0.0037 -0.01736482 -0.09848079" rpy="3.141592653589793 0 0" />
+        <parent link="R_leg2" />
+        <child link="R_wheel" />
+        <axis xyz="1 0 0" />
+        <limit effort="100" velocity="50" />
+    </joint>
+
+</robot>
