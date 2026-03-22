@@ -182,7 +182,7 @@ class YawBotEnvCfg(DirectRLEnvCfg):
     termination_contact_force_threshold = 1.0
 
     # reward scales
-    rew_scale_alive = 1.0
+    rew_scale_alive = 0.2
     rew_scale_terminated = -15.0
     rew_scale_angle = -1.0
     rew_scale_ang_vel = -0.15
@@ -194,9 +194,9 @@ class YawBotEnvCfg(DirectRLEnvCfg):
     rew_scale_leg_symmetry = -0.05
     rew_scale_wheel_spin = 0.0
     rew_scale_wheel_speed_diff = -0.002
-    rew_scale_track_lin_vel = 3.0
+    rew_scale_track_lin_vel = 5.0
     rew_scale_track_yaw_vel = 0.0
-    rew_scale_track_wheel_lin = 1.2
+    rew_scale_track_wheel_lin = 2.0
     rew_scale_track_wheel_yaw = 0.0
 
     # max_body_angle = 0.5
